@@ -1,0 +1,5 @@
+recursive-include rpm *
+recursive-include doc *.md
+include doc/Makefile doc/*.1
+include barman-wal-restore
+include ChangeLog LICENSE MANIFEST.in setup.py README

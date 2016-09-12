@@ -1,0 +1,33 @@
+# compiled python sources
+*.pyc
+*.pyo
+
+# python modules
+*.egg
+.eggs
+
+# editor backups
+*~
+\#*\#
+.*.swp
+
+# eclipse project files
+/.project
+/.pydevproject
+/.settings
+
+# PyCharm
+/.idea
+
+# tox testing
+.tox/
+.cache/
+
+# setuptools
+/MANIFEST
+/dist
+/build
+/*.egg-info
+
+# OSX
+.DS_Store
