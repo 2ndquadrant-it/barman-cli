@@ -2,6 +2,14 @@
 
 	Update the ChangeLog file
 
+	Bump barman-cli version to 1.1
+	This release comes immediately after 1.0 to put the correct release
+	date in the documentation and produce a universal wheel package.
+
+	Add missing setup.cfg file
+
+	Update the ChangeLog file
+
 2016-09-12  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
 
 	Initial commit
