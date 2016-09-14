@@ -77,5 +77,5 @@ rm -rf %{buildroot}
 %doc %{_mandir}/man1/barman-wal-restore.1.gz
 
 %changelog
-* wed Sep 14 2016 - Marco Nenciarini <marco.nenciarini@2ndquadrant.it> 1.1-1
+* Wed Sep 14 2016 - Marco Nenciarini <marco.nenciarini@2ndquadrant.it> 1.1-1
 - New release 1.1-1
