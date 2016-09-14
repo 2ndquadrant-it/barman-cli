@@ -1,3 +1,11 @@
+2016-09-14  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
+
+	Update the ChangeLog file
+
 2016-09-12  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
 
 	Initial commit
+	Import barman-wal-restore from the Barman project.
+	Start a new project, called barman-cli, which now contains only
+	barman-wal-restore but will contain more client tools in the
+	future.
