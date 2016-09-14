@@ -20,7 +20,7 @@
 %global __python_ver python
 %endif
 
-%global main_version 1.0
+%global main_version 1.1
 # comment out the next line if not a pre-release (use '#%%global ...')
 #%%global extra_version a1
 # Usually 1 - unique sequence for all pre-release version
@@ -77,5 +77,5 @@ rm -rf %{buildroot}
 %doc %{_mandir}/man1/barman-wal-restore.1.gz
 
 %changelog
-* Mon Sep 12 2016 - Marco Nenciarini <marco.nenciarini@2ndquadrant.it> 1.0-1
-- New release 1.0-1
+* wed Sep 14 2016 - Marco Nenciarini <marco.nenciarini@2ndquadrant.it> 1.1-1
+- New release 1.1-1

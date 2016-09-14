@@ -42,7 +42,7 @@ if sys.version_info < (2, 7):
         'argparse',
     ]
 
-version = '1.0'
+version = '1.1'
 
 setup(
     name='barman-cli',
