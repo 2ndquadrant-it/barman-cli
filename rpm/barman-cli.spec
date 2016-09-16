@@ -24,7 +24,7 @@
 # comment out the next line if not a pre-release (use '#%%global ...')
 #%%global extra_version a1
 # Usually 1 - unique sequence for all pre-release version
-%global package_release 1
+%global package_release 2
 
 %{!?pybasever: %define pybasever %(%{__python} -c "import sys;print(sys.version[0:3])")}
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
@@ -41,7 +41,7 @@ Source0:	%{name}-%{version}%{?extra_version:%{extra_version}}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot-%(%{__id_u} -n)
 BuildArch:	noarch
 Vendor:		2ndQuadrant Italia Srl <info@2ndquadrant.it>
-Requires:	python-abi = %{pybasever}
+Requires:	python-abi = %{pybasever}, %{__python_ver}-argparse
 
 %description
 Client utilities for the integration of Barman in
@@ -77,5 +77,7 @@ rm -rf %{buildroot}
 %doc %{_mandir}/man1/barman-wal-restore.1.gz
 
 %changelog
+* Wed Sep 16 2016 - Francesco Canovai <francesco.canovai@2ndquadrant.it> 1.1-2
+- Fixed dependency on python-argparse
 * Wed Sep 14 2016 - Marco Nenciarini <marco.nenciarini@2ndquadrant.it> 1.1-1
 - New release 1.1-1
