@@ -59,7 +59,7 @@ def main():
     # Open the destination file
     try:
         dest_file = open(config.wal_dest, 'wb')
-    except OSError as e:
+    except EnvironmentError as e:
         exit_with_error("Cannot open '%s' (WAL_DEST) for writing: %s" %
                         (config.wal_dest, e))
 
@@ -72,7 +72,7 @@ def main():
     try:
         # Execute barman get-wal through the ssh connection
         ssh_process = RemoteGetWal(config, config.wal_name, dest_file)
-    except OSError as e:
+    except EnvironmentError as e:
         exit_with_error('Error executing "ssh": %s' % e, sleep=config.sleep)
 
     # Spawn a process for every additional file
@@ -116,11 +116,11 @@ def spawn_additional_process(config, additional_files):
             # Spawn a process and write the output in the spool dir
             process = RemoteGetWal(config, wal_name, spool_file_name)
             processes.append(process)
-        except OSError:
+        except EnvironmentError:
             # If execution has failed make sure the spool file is unlinked
             try:
                 os.unlink(spool_file_name)
-            except OSError:
+            except EnvironmentError:
                 # Suppress unlink errors
                 pass
 
@@ -142,7 +142,7 @@ def peek_additional_files(config):
     try:
         if not os.path.exists(SPOOL_DIR):
             os.mkdir(SPOOL_DIR)
-    except OSError as e:
+    except EnvironmentError as e:
         exit_with_error("Cannot create '%s' directory: %s" % (SPOOL_DIR, e))
 
     # Retrieve the list of files from remote
