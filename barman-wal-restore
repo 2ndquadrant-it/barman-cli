@@ -31,7 +31,6 @@ import shutil
 import subprocess
 import sys
 import time
-import types
 
 try:
     import argparse
@@ -43,6 +42,13 @@ DEFAULT_USER = 'barman'
 VERSION = '1.1'
 # TODO: make this generic
 SPOOL_DIR = '/var/tmp/barman-wal-restore'
+
+# The string_types list is used to identify strings
+# in a consistent way between python 2 and 3
+if sys.version_info[0] == 3:
+    string_types = str,
+else:
+    string_types = basestring,
 
 
 def main():
@@ -352,7 +358,7 @@ class RemoteGetWal(object):
 
         # If a string has been passed, it's the name of the destination file
         # We convert it in a writable binary file object
-        if isinstance(dest_file, str):
+        if isinstance(dest_file, string_types):
             self.dest_file = dest_file
             dest_file = open(dest_file, 'wb')
 
