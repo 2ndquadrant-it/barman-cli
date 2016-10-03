@@ -1,4 +1,32 @@
+2016-10-03  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
+
+	Update the ChangeLog file
+
+	Bump barman-cli version to 1.2
+	This release fixes a Python 2.x compatibility issue in
+	barman-wal-restore when used with --parallel option.
+
+	Fix flake8 by adding an isort section to setup.cfg
+
+	Add unit tests using tox and py.test
+
+2016-09-30  Giulio Calacoci  <giulio.calacoci@2ndquadrant.it>
+
+	Fix string type check in RemoteGetWal class
+	Rewrite the type check of `dest_file` argument to be compatible with
+	Python 2.6, 2.7 and 3.x.
+
+2016-09-23  Leonardo Cecchi  <leonardo.cecchi@2ndquadrant.it>
+
+	Avoid printing stack-traces because of IO errors
+
+2016-09-16  Francesco Canovai  <francesco.canovai@2ndquadrant.it>
+
+	Fixed dependency on python-argparse
+
 2016-09-14  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
+
+	Fix typo in RPM spec file
 
 	Update the ChangeLog file
 
