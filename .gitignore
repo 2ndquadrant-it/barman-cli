@@ -1,6 +1,7 @@
 # compiled python sources
 *.pyc
 *.pyo
+__pycache__/
 
 # python modules
 *.egg
@@ -31,3 +32,6 @@
 
 # OSX
 .DS_Store
+
+# Testing artifacts
+/barman-wal-restorec
