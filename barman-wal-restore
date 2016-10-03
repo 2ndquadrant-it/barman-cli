@@ -39,7 +39,7 @@ except ImportError:
 
 DEFAULT_USER = 'barman'
 # TODO: Remove version from here and use setup.py's
-VERSION = '1.1'
+VERSION = '1.2'
 # TODO: make this generic
 SPOOL_DIR = '/var/tmp/barman-wal-restore'
 
