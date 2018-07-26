@@ -2,7 +2,7 @@
 #
 # barman-cli - Client Utilities for Barman
 #
-# Copyright (C) 2011-2016 2ndQuadrant Italia Srl <info@2ndquadrant.it>
+# Copyright (C) 2011-2018 2ndQuadrant Ltd <info@2ndquadrant.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -48,7 +48,7 @@ if sys.version_info < (2, 7):
         'argparse',
     ]
 
-version = '1.2'
+version = '1.3'
 
 setup(
     name='barman-cli',

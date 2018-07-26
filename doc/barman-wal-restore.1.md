@@ -1,5 +1,5 @@
-% BARMAN-WAL-RESTORE(1) Barman User manuals | Version 1.2
-% 2ndQuadrant Italy <http://www.2ndQuadrant.it>
+% BARMAN-WAL-RESTORE(1) Barman User manuals | Version 1.3
+% 2ndQuadrant <http://www.2ndQuadrant.com>
 % October 3, 2016
 
 # NAME
@@ -99,7 +99,7 @@ Any bug can be reported via the Github issue tracker.
 
 # COPYING
 
-Barman is the property of 2ndQuadrant Italia
+Barman is the property of 2ndQuadrant Limited
 and its code is distributed under GNU General Public License v3.
 
-Copyright (C) 2011-2016 2ndQuadrant Italia Srl - <http://www.2ndQuadrant.it/>.
+Copyright (C) 2011-2018 2ndQuadrant Ltd - <http://www.2ndQuadrant.com/>.

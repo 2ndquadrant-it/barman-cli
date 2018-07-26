@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (C) 2011-2016 2ndQuadrant Italia Srl
+# Copyright (C) 2011-2018 2ndQuadrant Ltd
 #
 # This file is part of Barman.
 #
