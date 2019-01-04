@@ -16,9 +16,11 @@
 # along with Barman.  If not, see <http://www.gnu.org/licenses/>.
 
 import imp
+import sys
 
 import mock
 
+sys.dont_write_bytecode = True
 try:
     # Execution from the project root
     bwr = imp.load_source('bwr', 'barman-wal-restore')

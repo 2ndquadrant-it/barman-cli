@@ -34,5 +34,4 @@ __pycache__/
 .DS_Store
 
 # Testing artifacts
-/barman-wal-restorec
 .pytest_cache/
