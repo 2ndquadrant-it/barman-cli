@@ -73,7 +73,9 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc README
 %{python_sitelib}/barman_cli-%{version}%{?extra_version:%{extra_version}}-py%{pybasever}.egg-info
+%{_bindir}/barman-wal-archive
 %{_bindir}/barman-wal-restore
+%doc %{_mandir}/man1/barman-wal-archive.1.gz
 %doc %{_mandir}/man1/barman-wal-restore.1.gz
 
 %changelog

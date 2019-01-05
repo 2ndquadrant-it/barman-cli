@@ -1,23 +1,23 @@
-% BARMAN-WAL-RESTORE(1) Barman User manuals | Version 1.3
+% BARMAN-WAL-ARCHIVE(1) Barman User manuals | Version 1.3
 % 2ndQuadrant <http://www.2ndQuadrant.com>
-% October 3, 2016
+% January 5, 2019
 
 # NAME
 
-barman-wal-restore - 'restore_command' based on Barman's get-wal
+barman-wal-archive - `archive_command` based on Barman's put-wal
 
 
 # SYNOPSIS
 
-barman-wal-restore [*OPTIONS*] *BARMAN_HOST* *SERVER_NAME* *WAL_NAME* *WAL_DEST*
+barman-wal-archive [*OPTIONS*] *BARMAN_HOST* *SERVER_NAME* *WAL_PATH*
 
 
 # DESCRIPTION
 
-This script can be used as a 'restore_command' for PostgreSQL servers,
-retrieving WAL files using the 'get-wal' feature of Barman. An SSH
-connection will be opened to the Barman host.
-`barman-wal-restore` allows the integration of Barman in PostgreSQL
+This script can be used in the `archive_command` of a PostgreSQL
+server to ship WAL files to a Barman host using the 'put-wal' command.
+An SSH connection will be opened to the Barman host.
+`barman-wal-archive` allows the integration of Barman in PostgreSQL
 clusters for better business continuity results.
 
 This script and Barman are administration tools for disaster recovery
@@ -32,11 +32,8 @@ BARMAN\_HOST
 SERVER\_NAME
 :    the server name configured in Barman from which WALs are taken.
 
-WAL\_NAME
-:    the value of the '%f' keyword (according to 'restore\_command').
-
-WAL\_DEST
-:    the value of the '%p' keyword (according to 'restore\_command').
+WAL\_PATH
+:    the value of the '%p' keyword (according to 'archive\_command').
 
 # OPTIONS
 
@@ -49,20 +46,6 @@ WAL\_DEST
 -U *USER*, --user *USER*
 :    the user used for the ssh connection to the Barman server. Defaults
      to 'barman'.
-
--s *SECONDS*, --sleep *SECONDS*
-:    sleep for SECONDS after a failure of get-wal request. Defaults
-     to 0 (nowait).
-
--p *JOBS*, --parallel *JOBS*
-:    specifies the number of files to peek and transfer in parallel,
-     defaults to 0 (disabled).
-
--z, --gzip
-:    transfer the WAL files compressed with gzip
-
--j, --bzip2
-:    transfer the WAL files compressed with bzip2
 
 -c *CONFIG*, --config *CONFIG*
 :    configuration file on the Barman server

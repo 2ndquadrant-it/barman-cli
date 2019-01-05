@@ -2,7 +2,7 @@
 #
 # barman-cli - Client Utilities for Barman
 #
-# Copyright (C) 2011-2018 2ndQuadrant Ltd <info@2ndquadrant.com>
+# Copyright (C) 2011-2019 2ndQuadrant Ltd <info@2ndquadrant.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -56,9 +56,12 @@ setup(
     author='2ndQuadrant Italia Srl',
     author_email='info@2ndquadrant.it',
     url='http://www.pgbarman.org/',
-    scripts=['barman-wal-restore', ],
+    scripts=['barman-wal-archive', 'barman-wal-restore', ],
     data_files=[
-        ('share/man/man1', ['doc/barman-wal-restore.1']),
+        ('share/man/man1', [
+            'doc/barman-wal-archive.1',
+            'doc/barman-wal-restore.1',
+        ]),
     ],
     license='GPL-3.0',
     description=__doc__.split("\n")[0],

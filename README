@@ -3,6 +3,10 @@
 This repository contains client utilities for Barman, Backup
 and Recovery Manager for PostgreSQL.
 
+RPM packages are available at https://rpm.2ndquadrant.com/.
+
+APT packages are available at https://apt.2ndquadrant.com/.
+
 ## About Barman
 
 Barman (Backup and Recovery Manager) is an open source administration
@@ -17,7 +21,7 @@ More information at: http://www.pgbarman.org/
 
 ## Licence
 
-Copyright (C) 2011-2018 2ndQuadrant Ltd
+Copyright (C) 2011-2019 2ndQuadrant Ltd
 
 Barman is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
