@@ -1,3 +1,28 @@
+2019-01-29  Gabriele Bartolini  <gabriele.bartolini@2ndQuadrant.it>
+
+	Update the ChangeLog file
+
+2019-01-05  Gabriele Bartolini  <gabriele.bartolini@2ndQuadrant.it>
+
+	Added docs, added script to setup files and updated copyright
+
+2019-01-04  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
+
+	Add barman-wal-archive
+
+2019-01-03  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
+
+	Fix travis integration
+
+	Update list of supported Python versions
+	- Dropped Python 3.3
+	- Added Python 3.6 and Python 3.7
+
+2018-07-26  Gabriele Bartolini  <gabriele.bartolini@2ndQuadrant.it>
+
+	Updated copyright info
+	Started v1.3 also
+
 2016-10-03  Marco Nenciarini  <marco.nenciarini@2ndquadrant.it>
 
 	Update the ChangeLog file
