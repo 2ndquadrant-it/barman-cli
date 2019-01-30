@@ -15,7 +15,8 @@ barman-wal-archive [*OPTIONS*] *BARMAN_HOST* *SERVER_NAME* *WAL_PATH*
 # DESCRIPTION
 
 This script can be used in the `archive_command` of a PostgreSQL
-server to ship WAL files to a Barman host using the 'put-wal' command.
+server to ship WAL files to a Barman host using the 'put-wal' command
+(introduced in Barman 2.6).
 An SSH connection will be opened to the Barman host.
 `barman-wal-archive` allows the integration of Barman in PostgreSQL
 clusters for better business continuity results.
