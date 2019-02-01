@@ -1,6 +1,6 @@
-% BARMAN-WAL-ARCHIVE(1) Barman User manuals | Version 1.3
+% BARMAN-WAL-ARCHIVE(1) Barman User manuals | Version 1.4dev
 % 2ndQuadrant <http://www.2ndQuadrant.com>
-% January 5, 2019
+% Month DD, 2019
 
 # NAME
 
