@@ -1,4 +1,13 @@
-# Client Utilities for Barman
+Merged into Barman core
+=======================
+
+**barman-cli has now been merged into Barman core, so this repository
+is no longer in use.**
+
+**ORIGINAL README BELOW**
+
+Client Utilities for Barman
+---------------------------
 
 This repository contains client utilities for Barman, Backup
 and Recovery Manager for PostgreSQL.
@@ -7,7 +16,8 @@ RPM packages are available at https://rpm.2ndquadrant.com/.
 
 APT packages are available at https://apt.2ndquadrant.com/.
 
-## About Barman
+About Barman
+------------
 
 Barman (Backup and Recovery Manager) is an open source administration
 tool for disaster recovery of PostgreSQL servers written in Python.
@@ -19,7 +29,8 @@ Barman is maintained by 2ndQuadrant and is distributed under GNU GPL 3.
 More information at: http://www.pgbarman.org/
 
 
-## Licence
+Licence
+-------
 
 Copyright (C) 2011-2019 2ndQuadrant Ltd
 
